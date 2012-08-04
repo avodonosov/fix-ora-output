@@ -2,7 +2,7 @@ The output produced by SQL*Plus or TOAD with the default value of the LINESIZE
 [system variable](http://download-east.oracle.com/docs/html/A88826_01/ch828.htm)
 is quite nasty. Similar to the following:
 ```
-SQL&gt; select * from users;
+SQL> select * from users;
 
         ID
 ----------
@@ -54,12 +54,13 @@ password
 
 3 rows selected.
 
-SQL&gt; spool off;
+SQL> spool off;
 
 ```
 
 This utility converts such an output to a pretty thing like this:
-```ID         NAME                                                                             SURNAME                                                                          LOGIN                                                                            PASSWORD                                                                         REGISTRATION_TIME             
+```
+ID         NAME                                                                             SURNAME                                                                          LOGIN                                                                            PASSWORD                                                                         REGISTRATION_TIME             
 ---------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- ----------------------------- 
          1 ivan                                                                             ivanov                                                                           vanya                                                                            123                                                                              26.06.08 21:16:12,000000      
          2 petr                                                                             petrov                                                                           petya                                                                            qwerty                                                                           26.06.08 21:16:12,000000      
