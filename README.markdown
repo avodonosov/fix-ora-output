@@ -1,6 +1,5 @@
 The output produced by SQL*Plus or TOAD with the default value of the LINESIZE 
-[system variable](http://download-east.oracle.com/docs/html/A88826_01/ch828.htm)
-is quite nasty. Similar to the following:
+system variable is quite nasty. Similar to the following:
 ```
 SQL> select * from users;
 
@@ -58,7 +57,10 @@ SQL> spool off;
 
 ```
 
-This utility converts such an output to a pretty thing like this:
+Sometimes we need to deal with such data when we have no direct access to the database,
+for example when the output is sent to you by customer.
+
+The ```fix-ora-output``` utility converts such an output to a pretty thing like this:
 ```
 ID         NAME                                                                             SURNAME                                                                          LOGIN                                                                            PASSWORD                                                                         REGISTRATION_TIME             
 ---------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- ----------------------------- 
