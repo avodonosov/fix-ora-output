@@ -69,4 +69,4 @@ ID         NAME                                                                 
          3 sidor                                                                            sidorov                                                                          sid                                                                              password                                                                         26.06.08 21:16:12,000000      
 
 ```
-Usage instructions are at the top of the file.
+Usage instructions are at the top of the _fix-ora-output.lisp_.
